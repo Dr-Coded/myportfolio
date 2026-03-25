@@ -1,79 +1,85 @@
+<a name="readme-top"></a>
 
+<h3><b>My Portfolio</b></h3>
+
+<div>
 
 # 📗 Table of Contents
 
-- 📖 About the Project
-  - 🛠 Built With
-    - Tech Stack
+- 📖 [About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
 
-
-- 💻 Getting Started
+- [💻 Getting Started](#getting-started)
   
-- 👥 Authors
+- [👥 Authors](#authors)
 
-- 🤝 Contributing
+- [🔭 Future Features](#future-features)
 
-- ⭐️ Show your support
+- [🤝 Contributing](#contributing)
 
-- 🙏 Acknowledgements
+- [⭐️ Show your support](#support)
 
-- 📝 License
+- [🙏 Acknowledgements](#acknowledgements)
+
+- [📝 License](#license)
 
 
-# 📖 My Portfolio
+# 📖 My Portfolio <a name="about-project"></a>
 
 It's a project dedicated to my personal portfolio information.
 
 My portfolio website is a curated digital space showcasing my best professional work, acting as my personal brand, CV, and business storefront.
 
-## 🛠 Built With 
+## 🛠 Built With <a name="built-with"></a>
 
 Visual Studio Code Software.
 
-### Tech Stack
+### Tech Stack <a name="tech-stack"></a>
 
 The tech stacks language used in writing this line of code are html and CSS.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 💻 Getting Started
-
-A repository link will be provided along with the readme file.
-
+## 👥 Authors <a name="authors"></a>
+DoctorCode
 
 
-### Prerequisites
-
-In order to run this project you need Clone this repository to your desired folder using this command from you terminal:
-
-  git clone git@github.com:Dr-Coded/myportfolio.git
-
-
-
-
-
-👤 **Author**
+👤 **Author's Details**
 
 - GitHub: [@githubhandle](https://github.com/Dr-Coded)
 - Twitter: [@twitterhandle](https://twitter.com/itzwisd)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/itz-wisd-2868bb1b4)
 
+## 🔭 Future Features <a name="future-features"></a>
 
+- [ ] **[My_Recent_Work_Page]**
+- [ ] **[About_Me_Page]**
+- [ ] **[Multi_Post_Stories_Page]**
 
-## 🤝 Contributing 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ⭐️ Show your support 
+
+## ⭐️ Show your support <a name="support"></a>
+
 If you like this project feel free to support the author by sending him words of encourage and  bringing more work to his table.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🙏 Acknowledgments 
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank my boss Dr. AbayomiOlaoye
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 📝 License 
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
