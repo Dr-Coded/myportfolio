@@ -54,9 +54,8 @@ DoctorCode
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[My_Recent_Work_Page]**
-- [ ] **[About_Me_Page]**
-- [ ] **[Multi_Post_Stories_Page]**
+- [ ] **[Multi_Post_Stories_Contents]**
+- [ ] **[Side_Menu_Contents]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,7 +75,7 @@ If you like this project feel free to support the author by sending him words of
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my boss Dr. AbayomiOlaoye
+I would like to thank Mindbyte Academy for taking their time to impact my life in terms on being a Front-End Developer.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
