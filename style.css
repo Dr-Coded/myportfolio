@@ -1,13 +1,15 @@
 body {
   height: auto;
-  width: 362px;
+  width: 100%;
+  margin: 0.001px;
+  overflow: hidden;
 }
 
 header {
   display: flex;
   position: fixed;
   background-color: #3c3a39;
-  width: 362px;
+  width: inherit;
   height: 46px;
 }
 
@@ -32,26 +34,26 @@ header {
 
 section {
   background-color: #1c1a19;
-  width: 315px;
-  height: 390px;
+  width: inherit;
+  height: 590px;
   padding: 120px 24px;
   background-image: url(/images/Illustration.png);
   background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: right;
+  background-position-y: 70%;
+  background-position-x: 90%;
 }
 
 h1 {
-  width: 400px;
-  height: 56px;
+  width: 90%;
+  font-family: "crete round", serif;
   letter-spacing: 0.37px;
   color: #ff6b00;
 }
 
 .introduction {
-  width: 327px;
-  height: 27px;
+  width: 90%;
   font-weight: 700;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0%;
@@ -59,8 +61,8 @@ h1 {
 }
 
 .write-up {
-  width: 327px;
-  height: 123px;
+  width: 90%;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -81,16 +83,4 @@ ul li {
   height: 20px;
   border-radius: 8px;
   padding: 8px;
-}
-
-.illustration {
-  border: 1px solid greenyellow;
-  display: flex;
-  justify-content: end;
-}
-
-.side-image {
-  margin-top: 3px;
-  margin-left: 2px;
-  transform: -164.51 deg;
 }
