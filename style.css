@@ -1,7 +1,8 @@
 body {
   height: auto;
-  width: 362px;
-  gap: 5%;
+  width: 100%;
+  margin: 0.001px;
+  overflow: hidden;
 }
 
 header {
@@ -11,14 +12,25 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #3c3a39;
-  width: 362px;
-  height: 46px;
+  width: inherit;
+  height: 56px;
 }
 
 .logo {
   width: 94px;
   height: 100px;
   padding: 1px 1px;
+  height: 40px;
+  padding: 1px 17px;
+  align-self: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: inherit;
+  width: inherit;
 }
 
 .menu_button {
@@ -28,13 +40,13 @@ header {
 
 .section01 {
   background-color: #1c1a19;
-  width: 315px;
-  height: auto;
+  width: inherit;
+  height: 590px;
   padding: 120px 24px;
   background-image: url(images/Illustration.png);
   background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: right;
+  background-position-y: 70%;
+  background-position-x: 90%;
 }
 
 #section02 {
@@ -146,6 +158,11 @@ button {
   height: 48px;
   font-size: 17px;
   line-height: 24px;
+}
+
+h1 {
+  width: 90%;
+  font-family: "crete round", serif;
   letter-spacing: 0.37px;
   color: #fff;
   margin-top: auto;
@@ -192,9 +209,9 @@ p.head {
 }
 
 .introduction {
-  width: 327px;
-  height: 27px;
+  width: 90%;
   font-weight: 700;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0%;
@@ -203,8 +220,8 @@ p.head {
 }
 
 .write-up {
-  width: auto;
-  height: 148px;
+  width: 90%;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
