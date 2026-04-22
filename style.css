@@ -10,13 +10,14 @@ header {
   position: fixed;
   background-color: #3c3a39;
   width: inherit;
-  height: 46px;
+  height: 56px;
 }
 
 .logo {
   width: 94px;
-  height: 44px;
-  padding: 1px 2px;
+  height: 40px;
+  padding: 1px 17px;
+  align-self: center;
 }
 
 .menu {
