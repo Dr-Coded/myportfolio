@@ -2,7 +2,6 @@ body {
   height: auto;
   width: 100%;
   margin: 0.001px;
-  overflow: hidden;
 }
 
 header {
@@ -18,7 +17,7 @@ header {
 
 .logo {
   width: 94px;
-  height: 100px;
+  height: 56px;
   padding: 1px 17px;
   align-self: center;
 }
@@ -38,13 +37,12 @@ header {
 
 .section01 {
   background-color: #1c1a19;
-  width: inherit;
   height: 590px;
   padding: 120px 24px;
   background-image: url(images/Illustration.png);
   background-repeat: no-repeat;
   background-position-y: 70%;
-  background-position-x: 90%;
+  background-position-x: 100%;
 }
 
 #section02 {
@@ -68,14 +66,15 @@ header {
   margin-top: 10px;
   margin-left: 0.01px;
   padding: 120px 24px 38px 24px;
+  width: 90%;
 }
 
 section.sect {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  align-items: center;
   justify-items: center;
+  justify-self: center;
   width: 260px;
   height: 251px;
   margin: 0%;
@@ -88,22 +87,23 @@ section.sect {
 }
 
 .breakln {
-  width: 308.4px;
+  width: 100%;
   height: 0.01px;
   border: 1px solid black;
   margin-bottom: 50px;
 }
 
 .breakln01 {
-  width: 308.4px;
+  width: 100%;
   height: 0.01px;
   margin-top: 65%;
   border: 1px solid #fff;
 }
 
 .workimg {
-  width: 309px;
+  width: auto;
   height: 237px;
+  align-items: center;
 }
 
 .lang {
@@ -116,11 +116,12 @@ section.sect {
 }
 
 p.lan {
-  width: 145px;
+  width: 67px;
   height: 20px;
-  padding: 10px 12px;
+  padding: 14px 12px;
   margin: 0%;
   text-align: center;
+  justify-self: center;
   color: black;
   border: 1px solid black;
 }
@@ -129,16 +130,18 @@ p#lan {
   background-color: rgba(255, 255, 255, 0.24);
   border: none;
   color: #fff;
+  justify-items: center;
 }
 
 button {
-  width: 124px;
+  width: 120px;
   height: 48px;
   color: #fff;
   background-color: #ff6b00;
   margin-top: 5%;
   gap: 10px;
   padding: 10px;
+  border: none;
 }
 
 .resume {
@@ -152,10 +155,11 @@ button {
 }
 
 .button_1 {
-  width: 315px;
+  width: 100%;
   height: 48px;
   font-size: 17px;
   line-height: 24px;
+  margin: 0.001px;
 }
 
 h1 {
@@ -262,8 +266,8 @@ ul li {
 }
 
 .about_me {
-  width: auto;
-  height: 79px;
+  width: 90%;
+  height: auto;
   font-weight: 400;
   font-size: 72px;
   line-height: 88px;
@@ -288,22 +292,22 @@ ul li {
 }
 
 .sect {
-  width: 225.46px;
+  width: 90%;
   height: auto;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto;
-  gap: 0.01px;
 }
 
 aside {
   display: flex;
-  justify-content: space-around;
-  height: 41.46px;
-  width: auto;
-  padding: 8px 12px;
+  justify-content: center;
   align-items: center;
+  height: 41.46px;
+  width: 90%;
+  padding: 8px 12px;
   gap: 1em;
+  border: 2px solid red;
 }
 
 .s_icon {
@@ -342,4 +346,103 @@ p.heading1 {
   line-height: 42.67px;
   font-weight: 400;
   padding: 0%;
+}
+
+.contact {
+  gap: 48px;
+  border: 2px solid red;
+  padding: 100px 24px;
+  padding-bottom: 0%;
+}
+
+.comment {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.001%;
+  text-align: center;
+  color: rgba(23, 43, 77, 1);
+}
+
+form {
+  margin: 0.001px auto;
+  width: 100%;
+  height: auto;
+  padding: 20px 0.01px;
+  padding-bottom: 0%;
+}
+
+textarea {
+  vertical-align: top;
+  height: 6em;
+  resize: vertical;
+  width: 85%;
+}
+
+input,
+textarea {
+  width: 85%;
+  height: 48px;
+  margin-left: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+  gap: 24px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: black;
+}
+
+.button_2 {
+  align-content: end;
+  justify-self: center;
+  font-size: 2px;
+  margin: 0.001px;
+}
+
+button.submit {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 3%;
+  width: auto;
+}
+
+img {
+  height: 24px;
+  width: 24px;
+}
+
+ul.down {
+  height: 72px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  padding: 0%;
+  gap: 1em;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+button:active {
+  background-color: rgb(52, 6, 6);
+}
+
+.bar {
+  margin-top: 50px;
+  width: auto;
+  height: 5px;
+}
+
+p.last {
+  justify-self: center;
 }

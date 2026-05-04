@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
 </head>
@@ -13,20 +13,21 @@
 <body>
     <header>
         <img class="logo" src="images/logo.png" alt="Logo">
-        <span class="menu  background-color: #1c1a19;
-"><img class="menu_button" src="images/menu_button.png"></span>
+        <span class="menu  background-color: #1c1a19;">
+        <img class="menu_button" src="images/menu_button.png"></span>
     </header>
 
     <section class="section01">
       <h1>Hey There, <br> I'm Wisdom</h1>
       <p class="introduction">I'm a Full-Stack Developer</p>
       <p class="write-up">I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,don’t hesitate to contact me.</p>
-      <ul class="button">
-        <li><img src="images/icons/git.png" alt="github"></li>
-        <li><img src="images/icons/linkedin.png" alt="linkedin"></li>
-        <li><img src="images/icons/Vector.png" alt="on-live"></li>
-        <li><img src="images/icons/twitter.png" alt="Twitter"></li>
-        <li><img src="images/icons/medium.png" alt="Medium"></li>
+      
+      <ul >
+        <li class="img"><img src="images/icons/git.png" alt="github"></li>
+        <li class="img"><img src="images/icons/linkedin.png" alt="linkedin"></li>
+        <li class="img"><img src="images/icons/vector.png" alt="on-live"></li>
+        <li class="img"><img src="images/icons/twitter.png" alt="Twitter"></li>
+        <li class="img"><img src="images/icons/medium.png" alt="Medium"></li>
       </ul>
     </section>
 
@@ -108,5 +109,39 @@
     </container>
   </section>
   
+  <section class="contact">
+    <p class="comment">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+
+    <form action="https://formspree.io/f/mvzlkybp" method="post">
+      <p class="info">
+        <input type="text" id="name" name="full name" placeholder="Full Name" required minlength="4" maxlength="30">
+      </p>
+
+      <p class="info">
+        <input type="email" id="mail" name="email address" placeholder="Email Address" required>
+      </p>
+
+      <p>
+        <textarea type="text" name="details" placeholder="Write me something..." required minlength="100" maxlength="500"></textarea>
+      </p>
+
+      <p class="button_2">
+        <button type="submit">Get in touch</button>
+      </p>
+        
+    </form>
+
+      <ul class="down">
+        <li class="img"><img src="images/icons/git1.png" alt="github"></li>
+        <li class="img"><img src="images/icons/linkedin1.png" alt="linkedin"></li>
+        <li class="img"><img src="images/icons/vector1.png" alt="on-live"></li>
+        <li class="img"><img src="images/icons/twitter1.png" alt="Twitter"></li>
+        <li class="img"><img src="images/icons/medium1.png" alt="Medium"></li>
+      </ul>
+      
+      <p class="last">
+        <img class="bar" src="images/bar.png" alt="bar.png">
+      </p>
+  </section>
 </body>
 </html>
