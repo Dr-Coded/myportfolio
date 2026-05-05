@@ -2,7 +2,6 @@ body {
   height: auto;
   width: 100%;
   margin: 0.001px;
-  overflow: hidden;
 }
 
 header {
@@ -18,33 +17,19 @@ header {
 
 .logo {
   width: 94px;
-  height: 100px;
+  height: 56px;
   padding: 1px 17px;
   align-self: center;
 }
 
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: inherit;
-  width: inherit;
-}
-
-.menu_button {
-  width: 40px;
-  height: 40px;
-}
-
 .section01 {
   background-color: #1c1a19;
-  width: inherit;
   height: 590px;
   padding: 120px 24px;
   background-image: url(images/Illustration.png);
   background-repeat: no-repeat;
   background-position-y: 70%;
-  background-position-x: 90%;
+  background-position-x: 100%;
 }
 
 #section02 {
@@ -68,14 +53,15 @@ header {
   margin-top: 10px;
   margin-left: 0.01px;
   padding: 120px 24px 38px 24px;
+  width: 90%;
 }
 
 section.sect {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  align-items: center;
   justify-items: center;
+  justify-self: center;
   width: 260px;
   height: 251px;
   margin: 0%;
@@ -88,22 +74,23 @@ section.sect {
 }
 
 .breakln {
-  width: 308.4px;
+  width: 100%;
   height: 0.01px;
   border: 1px solid black;
   margin-bottom: 50px;
 }
 
 .breakln01 {
-  width: 308.4px;
+  width: 100%;
   height: 0.01px;
   margin-top: 65%;
   border: 1px solid #fff;
 }
 
 .workimg {
-  width: 309px;
+  width: auto;
   height: 237px;
+  align-items: center;
 }
 
 .lang {
@@ -116,11 +103,12 @@ section.sect {
 }
 
 p.lan {
-  width: 145px;
+  width: 67px;
   height: 20px;
-  padding: 10px 12px;
+  padding: 14px 12px;
   margin: 0%;
   text-align: center;
+  justify-self: center;
   color: black;
   border: 1px solid black;
 }
@@ -129,21 +117,23 @@ p#lan {
   background-color: rgba(255, 255, 255, 0.24);
   border: none;
   color: #fff;
+  justify-items: center;
 }
 
 button {
-  width: 124px;
+  width: 120px;
   height: 48px;
   color: #fff;
   background-color: #ff6b00;
   margin-top: 5%;
   gap: 10px;
   padding: 10px;
+  border: none;
 }
 
 .resume {
   width: 160px;
-  height: 48;
+  height: 48px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -152,10 +142,11 @@ button {
 }
 
 .button_1 {
-  width: 315px;
+  width: 100%;
   height: 48px;
   font-size: 17px;
   line-height: 24px;
+  margin: 0.001px;
 }
 
 h1 {
@@ -262,8 +253,8 @@ ul li {
 }
 
 .about_me {
-  width: auto;
-  height: 79px;
+  width: 90%;
+  height: auto;
   font-weight: 400;
   font-size: 72px;
   line-height: 88px;
@@ -342,4 +333,9 @@ p.heading1 {
   line-height: 42.67px;
   font-weight: 400;
   padding: 0%;
+}
+
+img {
+  height: 24px;
+  width: 24px;
 }
