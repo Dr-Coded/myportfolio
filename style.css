@@ -85,8 +85,6 @@ header {
   width: auto;
 }
 
-
-
 .breakln01 {
   width: 100%;
   height: 0.01px;
@@ -100,8 +98,6 @@ header {
   align-items: center;
   margin-top: 80px;
 }
-
-
 
 .tags {
   display: grid;
@@ -164,7 +160,7 @@ button {
 .button_1 {
   width: 100%;
   height: 48px;
-  margin-top: 0px;
+  margin-top: 0%;
 }
 
 h1 {
@@ -186,7 +182,7 @@ h1 {
   font-family: "crete round", serif;
   font-size: 38px;
   line-height: 52px;
-  border-bottom: 1px solid rgba(33, 33, 33, 0.5) ;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.5);
 }
 
 p.head {
@@ -284,7 +280,6 @@ li {
   color: rgba(255, 107, 0, 1);
   margin: 0%;
 }
-
 
 .all1 {
   display: flex;
@@ -460,11 +455,10 @@ button.submit {
 }
 
 .down {
-  margin-top: 40px !important; 
+  margin: 40px auto !important;
   height: auto;
   width: 200px;
   gap: 5%;
-  margin: auto;
 }
 
 .imgs {
@@ -501,14 +495,11 @@ form:invalid [type="submit"] {
 }
 
 p.last {
-  justify-self: center;
-}
-
-hr {
   height: 5px;
   width: 134px;
   background-color: rgba(13, 21, 30, 1);
   border-radius: 10px;
+  justify-self: center;
 }
 
 .last {
