@@ -13,12 +13,18 @@ body {
 
 header {
   display: flex;
-  position: absolute;
   position: fixed;
   background-color: #3c3a39;
-  width: inherit;
+  width: 100%;
   height: 72px;
-  border: 1px solid red;
+}
+
+span.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: auto;
+  width: 100%;
 }
 
 div.nav{
@@ -29,6 +35,7 @@ div.post {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: auto;
 }
 
 .logo {
@@ -62,14 +69,15 @@ div.post {
 .section02 {
   display: flex;
   flex-direction: column;
-  height: auto;
-  width: auto;
+  height: inherit;
+  width: 90%;
   background-color: white;
   background-image: none;
   padding: 120px 24px;
+  justify-self: center;
 }
 
-.section03 {
+.section04 {
   display: none;
 }
 
@@ -82,8 +90,8 @@ div.post {
 }
 
 p.head1 {
-  width: inherit;
-  height: 81px;
+  width: 90%;
+  height: inherit;
   font-family: "crete round", serif;
   line-height: 44px;
   font-size: 32px;
@@ -121,15 +129,10 @@ div.mps {
 }
 
 p.brkln > img {
-  width: 90%;
-  height: 0.01px;
-  margin-top: 0%;
-  border: 1px solid rgba(33, 33, 33, 1);
+  display: none;
+  
 }
 
-p.brkln {
-  visibility: hidden;
-}
 
 .workimg {
   width: 100%;
@@ -141,7 +144,7 @@ p.brkln {
 text.tags {
   display: flex;
   width: inherit;
-  height: 40px;
+  height: auto;
   gap: 12px;
 }
 
@@ -232,7 +235,7 @@ p.head {
 
 .writeup1 {
   color: #091e42;
-  width: 100%;
+  width: fit-content  ;
   margin: 0%;
 }
 
@@ -248,7 +251,7 @@ div.start {
 p.writeup2 {
   color: #fff;
   width: 90%;
-  height: 96px;
+  height: auto;
 }
 
 .introduction {
@@ -369,7 +372,7 @@ p.heading {
 }
 
 p.heading1 {
-  width: 100%;
+  width: fit-content;
   height: auto;
   font-family: "crete round", serif;
   font-size: 32px;
@@ -550,39 +553,36 @@ p.last {
 
 @media (min-width: 768px) {
   body {
-    width: 100vw;
-    border: 1px solid red;
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  img.logo {
+    margin-left: 100px;
   }
 
   div.nav{
     display: grid;
     grid-template-columns: 1fr;
-    border: 1px solid red;
     width: auto;
     height: inherit;
     color: white;
     align-items: center;
-    margin-right: 20%;
+    margin-right: 100px;
   }
-
-  span.menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: inherit;
-    width: 90%;
-  }
-  
 
   div.mps {
-    width: auto;
+    width: fit-content;
     background-image: none;
   }
 
   div.items {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     align-content: flex-end;
     padding: 10px 12px;
   }
@@ -591,10 +591,13 @@ p.last {
     width: auto;
     height: 20px;
     margin: 0%;
-    border: 1px solid green;
   }
   img.item {
     border-radius: 8px 8px;
+  }
+
+  p#clear {
+    visibility: hidden;
   }
 
   #mps1 {
@@ -635,34 +638,38 @@ p.last {
 
   .section01 {
     display: grid;
-    grid-template-columns: 7% 50% 45%;
+    grid-template-columns: 5% auto 45%;
     background-position-x: 100%;
     width: 100%;
+    padding: 0%;
+    height: auto;
   }
 
   .section02 {
     gap: 20px;
-    width: 100%;
+    width: 90%;
+    margin: 0px 50px;
+    padding: 130px 24px;
   }
 
   ul {
     display: flex;
     flex-direction: column;
     order: -1;
-    margin-top: 134px;
-    margin-left: 0%;
+    margin-top: 224px;
+    margin-left: 50%;
   }
 
   li {
     width: fit-content;
-    margin-left: 26px;
+    margin-left: 0px;
   }
 
   div.start {
     display: flex;
     flex-direction: column;
-    padding: 100px 0%;
-    margin-left: 83px;
+    padding: 192px 0%;
+    margin-left: 53px;
   }
 
   h1,p.introduction,p.write-up {
@@ -682,29 +689,19 @@ p.last {
 
   p.heading1 {
     margin: 0%;
-  }
-
-  p.recent {
-    padding: 0%;
+    width: inherit;
   }
 
   .grid1 {
     display: grid;
-    grid-template-columns: 35% 65%;
-    width: 96%%;
-    gap: 24px;
-  }
-
-  .grid2 {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    width: 96%;
+    grid-template-columns: auto 2fr;
     gap: 24px;
   }
 
   p.recent {
     border: none;
-    width: auto;
+    width: max-content;
+    padding: 0%;
   }
 
   #pad {
@@ -713,15 +710,46 @@ p.last {
 
   .section03 {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     height: auto;
-    width: 100%;
+    min-width: fit-content;
     background-image: none;
     padding: 0% 0%;
     gap: 24px;
     align-self: center;
-    border: 1px solid red;
+  }
+
+  .section04 {
+    display: grid;
+    gap: 20px;
+  }
+
+    .grid2 {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    width: fit-content;
+    gap: 24px;
+  }
+
+    .grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: fit-content;
+    gap: 24px;
+  }
+  
+  p.brkln > img {
+    display: block;
+    width: 100%;
+    height: 0.01px;
+    margin-top: 0%;
+    border: 1px solid rgba(33, 33, 33, 1);
+  }
+
+  p.brkln {
+    margin: 0%;
+    align-self: center;
   }
 
   span.div {
@@ -735,18 +763,14 @@ p.last {
     grid-template-rows: auto;
     background-position: 100%;
     background-size: 40%;
-    background-position-y: 10%;
-    border: 1px solid red;
+    background-position-y: 15%;
+    width: auto;
   }
 
   img.breakln01 {
-    height: 1px;
+    height: 0.1px;
     margin: 0% 0% 0% 60px;
     width: 90%;
-  }
-
-  p.brkln {
-  visibility: visible;
   }
   
   .all1 {   
@@ -809,13 +833,16 @@ p.last {
     display: flex;
     flex-direction: row;
     width: 200px;
-    height: 40px;
-    margin: 16px 16px;
+    height: 10px;
     align-content: center;
   }
 
   p.button_2 {
     justify-content: flex-start;
+  }
+
+  p.last {
+    display: none;
   }
 }
 
