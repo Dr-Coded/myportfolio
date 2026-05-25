@@ -27,7 +27,7 @@ span.menu {
   width: 100%;
 }
 
-div.nav{
+div.nav {
   display: none;
 }
 
@@ -45,8 +45,6 @@ div.post {
   align-self: center;
 }
 
-
-
 .menu_button {
   width: 40px;
   height: 40px;
@@ -61,7 +59,7 @@ div.post {
   background-image: url(images/Illustration.png);
   background-size: 40%;
   background-repeat: no-repeat;
-  background-position-y: 60% ;
+  background-position-y: 60%;
   background-position-x: 125%;
   gap: 12px;
 }
@@ -128,11 +126,14 @@ div.mps {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-p.brkln > img {
-  display: none;
-  
+img {
+  height: 24px;
+  width: 24px;
 }
 
+p.brkln > img {
+  display: none;
+}
 
 .workimg {
   width: 100%;
@@ -235,7 +236,7 @@ p.head {
 
 .writeup1 {
   color: #091e42;
-  width: fit-content  ;
+  width: fit-content;
   margin: 0%;
 }
 
@@ -392,11 +393,6 @@ p.skill {
   line-height: 42.67px;
   width: 100%;
   margin: 1%;
-}
-
-img {
-  height: 24px;
-  width: 24px;
 }
 
 .contact {
@@ -564,7 +560,7 @@ p.last {
     margin-left: 100px;
   }
 
-  div.nav{
+  div.nav {
     display: grid;
     grid-template-columns: 1fr;
     width: auto;
@@ -592,6 +588,7 @@ p.last {
     height: 20px;
     margin: 0%;
   }
+
   img.item {
     border-radius: 8px 8px;
   }
@@ -611,11 +608,6 @@ p.last {
     height: 48px;
     margin-top: 0%;
   }
-
-  /*ain.work {
-    display: flex;
-    flex-direction: column;
-  }*/
 
   #mps2 {
     background-image: url(images/background2.png);
@@ -648,7 +640,7 @@ p.last {
   .section02 {
     gap: 20px;
     width: 90%;
-    margin: 0px 50px;
+    margin: 0% 50px;
     padding: 130px 24px;
   }
 
@@ -662,7 +654,7 @@ p.last {
 
   li {
     width: fit-content;
-    margin-left: 0px;
+    margin-left: %;
   }
 
   div.start {
@@ -672,7 +664,9 @@ p.last {
     margin-left: 53px;
   }
 
-  h1,p.introduction,p.write-up {
+  h1,
+  p.introduction,
+  p.write-up {
     width: 80%;
   }
 
@@ -725,20 +719,20 @@ p.last {
     gap: 20px;
   }
 
-    .grid2 {
+  .grid2 {
     display: grid;
     grid-template-columns: 55% 45%;
     width: fit-content;
     gap: 24px;
   }
 
-    .grid3 {
+  .grid3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: fit-content;
     gap: 24px;
   }
-  
+
   p.brkln > img {
     display: block;
     width: 100%;
@@ -772,12 +766,11 @@ p.last {
     margin: 0% 0% 0% 60px;
     width: 90%;
   }
-  
-  .all1 {   
+
+  .all1 {
     width: 50%;
     margin-left: 60px;
     padding: 130px 0%;
-    width: 516px;
   }
 
   .all2 {
@@ -822,7 +815,6 @@ p.last {
 
   button.tag {
     font-size: 15px;
-    line-
   }
 
   section.smedia {
@@ -845,4 +837,3 @@ p.last {
     display: none;
   }
 }
-
