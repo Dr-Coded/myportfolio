@@ -1,6 +1,7 @@
 body {
   height: auto;
-  width: 360px;
+  min-width: 360px;
+  max-width: fit-content;
   margin: 0.001px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -14,11 +15,20 @@ header {
   display: flex;
   position: absolute;
   position: fixed;
-  justify-content: space-between;
-  align-items: center;
   background-color: #3c3a39;
   width: inherit;
-  height: 56px;
+  height: 72px;
+  border: 1px solid red;
+}
+
+div.nav{
+  display: none;
+}
+
+div.post {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .logo {
@@ -28,13 +38,7 @@ header {
   align-self: center;
 }
 
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: inherit;
-  width: inherit;
-}
+
 
 .menu_button {
   width: 40px;
@@ -48,9 +52,10 @@ header {
   height: 590px;
   padding: 120px 24px;
   background-image: url(images/Illustration.png);
+  background-size: 40%;
   background-repeat: no-repeat;
-  background-position-y: 55%;
-  background-position-x: 100%;
+  background-position-y: 60% ;
+  background-position-x: 125%;
   gap: 12px;
 }
 
@@ -65,10 +70,26 @@ header {
 }
 
 .section03 {
-  width: auto;
+  display: none;
+}
+
+.mps1 {
+  margin-top: 0%;
+  background-image: url(images/background1.png);
+  background-size: cover;
   height: auto;
-  padding: 0.01px 24px;
-  margin-bottom: 70px;
+  width: auto;
+}
+
+p.head1 {
+  width: inherit;
+  height: 81px;
+  font-family: "crete round", serif;
+  line-height: 44px;
+  font-size: 32px;
+  color: #fff;
+  margin-top: 120px;
+  margin-bottom: 0%;
 }
 
 .all2 {
@@ -79,36 +100,49 @@ header {
 
 .mps {
   margin-top: 0%;
-  background-image: url(images/background2.png);
+  background-image: url(images/background.png);
   background-size: cover;
   height: auto;
   width: auto;
 }
 
+div.mps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 12px;
+}
+
 .breakln01 {
   width: 100%;
   height: 0.01px;
-  margin-top: 65%;
+  margin-top: 35%;
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+p.brkln > img {
+  width: 90%;
+  height: 0.01px;
+  margin-top: 0%;
+  border: 1px solid rgba(33, 33, 33, 1);
+}
+
+p.brkln {
+  visibility: hidden;
 }
 
 .workimg {
   width: 100%;
   height: 237px;
   align-items: center;
-  margin-top: 80px;
-}
-
-.tags {
-  display: grid;
-  grid-template-columns: 1fr 1fr auto 1fr;
-  width: inherit;
-  height: 40px;
-  gap: 10px;
+  margin-top: 0%;
 }
 
 text.tags {
-  margin-bottom: 12px;
+  display: flex;
+  width: inherit;
+  height: 40px;
+  gap: 12px;
 }
 
 button.tag {
@@ -202,7 +236,7 @@ p.head {
   margin: 0%;
 }
 
-div {
+div.start {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -213,8 +247,8 @@ div {
 
 p.writeup2 {
   color: #fff;
-  width: 100%;
-  margin: 0%;
+  width: 90%;
+  height: 96px;
 }
 
 .introduction {
@@ -263,10 +297,12 @@ li {
   flex-direction: column;
   height: auto;
   background-image: url(images/illustration2.png);
+  background-size: 50%;
+  background-position: 100%;
   background-repeat: no-repeat;
-  background-position-y: 24%;
-  background-position-x: right;
-  padding: 120px 24px;
+  background-position-y: 20%;
+  background-position-x: 160%;
+  padding: 0% 24px;
   padding-bottom: 30px;
   background-color: #1c1a19;
 }
@@ -308,7 +344,7 @@ aside {
 aside.inside {
   height: auto;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
 }
 
@@ -451,14 +487,15 @@ button.submit {
 .smedia {
   width: inherit;
   border-top: 1px solid rgba(223, 225, 230, 1);
-  margin-top: 40%;
+  margin-top: 20%;
 }
 
-.down {
-  margin: 40px auto !important;
+ul.down {
+  margin: 20px auto 40px auto !important;
   height: auto;
-  width: 200px;
-  gap: 5%;
+  width: 180px;
+  gap: 7%;
+  justify-content: center;
 }
 
 .imgs {
@@ -496,7 +533,7 @@ form:invalid [type="submit"] {
 
 p.last {
   height: 5px;
-  width: 134px;
+  width: 30%;
   background-color: rgba(13, 21, 30, 1);
   border-radius: 10px;
   justify-self: center;
@@ -510,3 +547,275 @@ p.last {
 .lastbttn {
   width: inherit;
 }
+
+@media (min-width: 768px) {
+  body {
+    width: 100vw;
+    border: 1px solid red;
+  }
+
+  div.nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid red;
+    width: auto;
+    height: inherit;
+    color: white;
+    align-items: center;
+    margin-right: 20%;
+  }
+
+  span.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: inherit;
+    width: 90%;
+  }
+  
+
+  div.mps {
+    width: auto;
+    background-image: none;
+  }
+
+  div.items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: flex-end;
+    padding: 10px 12px;
+  }
+
+  p.item {
+    width: auto;
+    height: 20px;
+    margin: 0%;
+    border: 1px solid green;
+  }
+  img.item {
+    border-radius: 8px 8px;
+  }
+
+  #mps1 {
+    background-image: url(images/background1.png);
+    background-size: cover;
+    border: 2px solid rgba(9, 30, 66, 1);
+  }
+
+  .button_1 {
+    width: 100%;
+    height: 48px;
+    margin-top: 0%;
+  }
+
+  /*ain.work {
+    display: flex;
+    flex-direction: column;
+  }*/
+
+  #mps2 {
+    background-image: url(images/background2.png);
+    background-size: cover;
+  }
+
+  #mps3 {
+    background-image: url(images/background3.png);
+    background-size: cover;
+  }
+
+  #mps4 {
+    background-image: url(images/background4.png);
+    background-size: cover;
+  }
+
+  .menu_button {
+    display: none;
+  }
+
+  .section01 {
+    display: grid;
+    grid-template-columns: 7% 50% 45%;
+    background-position-x: 100%;
+    width: 100%;
+  }
+
+  .section02 {
+    gap: 20px;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    order: -1;
+    margin-top: 134px;
+    margin-left: 0%;
+  }
+
+  li {
+    width: fit-content;
+    margin-left: 26px;
+  }
+
+  div.start {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0%;
+    margin-left: 83px;
+  }
+
+  h1,p.introduction,p.write-up {
+    width: 80%;
+  }
+
+  main.main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .workimg {
+    margin: 0%;
+    height: inherit;
+  }
+
+  p.heading1 {
+    margin: 0%;
+  }
+
+  p.recent {
+    padding: 0%;
+  }
+
+  .grid1 {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    width: 96%%;
+    gap: 24px;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 96%;
+    gap: 24px;
+  }
+
+  p.recent {
+    border: none;
+    width: auto;
+  }
+
+  #pad {
+    display: none;
+  }
+
+  .section03 {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto auto auto;
+    height: auto;
+    width: 100%;
+    background-image: none;
+    padding: 0% 0%;
+    gap: 24px;
+    align-self: center;
+    border: 1px solid red;
+  }
+
+  span.div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.aboutme {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-position: 100%;
+    background-size: 40%;
+    background-position-y: 10%;
+    border: 1px solid red;
+  }
+
+  img.breakln01 {
+    height: 1px;
+    margin: 0% 0% 0% 60px;
+    width: 90%;
+  }
+
+  p.brkln {
+  visibility: visible;
+  }
+  
+  .all1 {   
+    width: 50%;
+    margin-left: 60px;
+    padding: 130px 0%;
+    width: 516px;
+  }
+
+  .all2 {
+    margin-left: 60px;
+    padding: 80px 0%;
+    gap: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  aside {
+    justify-content: left;
+    align-items: left;
+  }
+
+  p.skill {
+    text-align: left;
+  }
+
+  section.contact {
+    display: grid;
+    grid-template-columns: 35% 60% 5%;
+    margin-left: 105px;
+    padding: 130px 0%;
+    gap: 24px;
+  }
+
+  p.comment {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+  }
+
+  p.write-up {
+    font-size: 20px;
+  }
+
+  p.writeup2 {
+    font-size: 17px;
+    height: auto;
+  }
+
+  button.tag {
+    font-size: 15px;
+    line-
+  }
+
+  section.smedia {
+    margin: 0%;
+  }
+
+  ul.down {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 40px;
+    margin: 16px 16px;
+    align-content: center;
+  }
+
+  p.button_2 {
+    justify-content: flex-start;
+  }
+}
+
