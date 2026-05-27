@@ -361,8 +361,9 @@ img {
 }
 
 .contact {
+  display: grid;
   gap: 58px;
-  padding: 40px 24px;
+  padding: 70px 24px;
   padding-bottom: 0%;
 }
 
@@ -392,8 +393,6 @@ textarea {
 }
 
 .textarea {
-  border: none;
-  background-color: rgba(251, 248, 247, 1);
   padding-left: 5%;
 }
 
@@ -427,11 +426,11 @@ textarea {
   border: none;
   gap: 24px;
   border-bottom: 1px solid rgba(219, 216, 215, 1);
+  outline: none;
 }
 
-input:focus,
-textarea:focus {
-  border-color: black;
+.textarea:focus {
+  background-color: rgba(251, 248, 247, 1);
 }
 
 .button_2 {
@@ -451,14 +450,15 @@ button.submit {
 .smedia {
   width: inherit;
   border-top: 1px solid rgba(223, 225, 230, 1);
-  margin-top: 40%;
+  margin-top: 20%;
 }
 
-.down {
+ul.down {
   margin: 40px auto !important;
   height: auto;
   width: 200px;
   gap: 5%;
+  justify-content: center;
 }
 
 .imgs {
