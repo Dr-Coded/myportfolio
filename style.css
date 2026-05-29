@@ -396,8 +396,9 @@ p.skill {
 }
 
 .contact {
+  display: grid;
   gap: 58px;
-  padding: 40px 24px;
+  padding: 75px 24px;
   padding-bottom: 0%;
 }
 
@@ -428,7 +429,6 @@ textarea {
 
 .textarea {
   border: none;
-  background-color: rgba(251, 248, 247, 1);
   padding-left: 5%;
 }
 
@@ -462,11 +462,11 @@ textarea {
   border: none;
   gap: 24px;
   border-bottom: 1px solid rgba(219, 216, 215, 1);
+  outline: none;
 }
 
-input:focus,
-textarea:focus {
-  border-color: black;
+.textarea:focus {
+  background-color: rgba(251, 248, 247, 1);
 }
 
 .button_2 {
@@ -490,10 +490,10 @@ button.submit {
 }
 
 ul.down {
-  margin: 20px auto 40px auto !important;
+  margin: 40px auto !important;
   height: auto;
-  width: 180px;
-  gap: 7%;
+  width: 200px;
+  gap: 5%;
   justify-content: center;
 }
 
