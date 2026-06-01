@@ -1,3 +1,9 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   height: auto;
   min-width: 360px;
@@ -11,17 +17,27 @@ body {
   color: rgba(9, 30, 66, 1);
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
 header {
   display: flex;
   position: fixed;
   background-color: #3c3a39;
   width: 100%;
   height: 72px;
+  z-index: 1;
 }
 
 span.menu {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 3fr 0.9fr 0.1fr;
   align-items: center;
   height: auto;
   width: 100%;
@@ -43,9 +59,11 @@ div.post {
   height: 56px;
   padding: 1px 17px;
   align-self: center;
+  margin-left: 0%;
 }
 
 .menu_button {
+  margin-left: 60%;
   width: 40px;
   height: 40px;
 }
@@ -77,6 +95,11 @@ div.post {
 
 .section04 {
   display: none;
+}
+
+.mps0 {
+  background-image: url(images/background1.png);
+  background-size: cover;
 }
 
 .mps1 {
@@ -149,6 +172,12 @@ text.tags {
   gap: 12px;
 }
 
+span.tag {
+  border: 1px solid rgba(137, 147, 164, 1);
+  padding: 5px;
+  max-width: fit-content;
+}
+
 button.tag {
   font-weight: 500;
   font-size: 15px;
@@ -183,6 +212,12 @@ button {
   width: 124px;
   height: 48px;
   border: none;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .resume {
@@ -308,7 +343,7 @@ li {
   background-position-x: 160%;
   padding: 0% 24px;
   padding-bottom: 30px;
-  background-color: #1c1a19;
+  background-color: rgba(28, 26, 25, 1);
 }
 
 .about_me {
@@ -396,9 +431,8 @@ p.skill {
 }
 
 .contact {
-  display: grid;
   gap: 58px;
-  padding: 75px 24px;
+  padding: 40px 24px;
   padding-bottom: 0%;
 }
 
@@ -503,27 +537,6 @@ ul.down {
   scale: calc(0.75);
 }
 
-/*
-button:hover {
-  background-color: rgba(255, 245, 225, 1);
-  color: rgba(245, 88, 0, 1);
-  border: 1px solid rgba(245, 88, 0, 1);
-  padding: 0%;
-}
-
-button:active {
-  background-color: rgba(245, 88, 0, 1);
-  box-shadow: none;
-  color: rgba(255, 255, 255, 1);
-}
-
-form:invalid [type="submit"] {
-  background-color: rgba(244, 241, 240, 1);
-  color: rgba(91, 89, 87, 1);
-  border: none;
-}
-*/
-
 .bar {
   margin-top: 50px;
   width: auto;
@@ -544,20 +557,27 @@ p.last {
 }
 
 .lastbttn {
-  width: inherit;
+  width: 160px;
+  height: 48px;
+  padding: 12px;
 }
 
 @media (min-width: 768px) {
   body {
     width: 100%;
+    overflow: hidden;
+  }
+
+  img.logo {
+    margin-left: 15%;
   }
 
   header {
     width: 100%;
   }
 
-  img.logo {
-    margin-left: 100px;
+  p.head1 {
+    height: 90px;
   }
 
   div.nav {
@@ -570,17 +590,12 @@ p.last {
     margin-right: 100px;
   }
 
-  div.mps {
-    width: fit-content;
-    background-image: none;
-  }
-
   div.items {
     display: flex;
-    flex-direction: row;
+    width: 100%;
     gap: 20px;
-    align-content: flex-end;
     padding: 10px 12px;
+    justify-content: end;
   }
 
   p.item {
@@ -593,20 +608,39 @@ p.last {
     border-radius: 8px 8px;
   }
 
-  p#clear {
-    visibility: hidden;
+  article.mps {
+    height: inherit;
+  }
+
+  .button_1 {
+    display: none;
+    width: 100%;
+    height: 48px;
+    margin-top: 0%;
   }
 
   #mps1 {
     background-image: url(images/background1.png);
     background-size: cover;
-    border: 2px solid rgba(9, 30, 66, 1);
   }
 
-  .button_1 {
-    width: 100%;
-    height: 48px;
-    margin-top: 0%;
+  #mps1:hover {
+    background-image: url(images/background01.png);
+    background-size: cover;
+    border: 2px solid rgba(9, 30, 66, 1);
+    cursor: pointer;
+
+    .mps {
+      visibility: hidden;
+    }
+
+    .tags {
+      display: none;
+    }
+
+    .button_1 {
+      display: block;
+    }
   }
 
   #mps2 {
@@ -614,14 +648,47 @@ p.last {
     background-size: cover;
   }
 
+  #mps2:hover {
+    background-image: url(images/background02.png);
+    background-size: cover;
+    border: 2px solid rgba(9, 30, 66, 1);
+    cursor: pointer;
+
+    .mps {
+      visibility: hidden;
+    }
+
+    .tags {
+      display: none;
+    }
+
+    .button_1 {
+      display: block;
+    }
+  }
+
   #mps3 {
     background-image: url(images/background3.png);
     background-size: cover;
   }
 
-  #mps4 {
-    background-image: url(images/background4.png);
+  #mps3:hover {
+    background-image: url(images/background03.png);
     background-size: cover;
+    border: 2px solid rgba(9, 30, 66, 1);
+    cursor: pointer;
+
+    .mps {
+      visibility: hidden;
+    }
+
+    .tags {
+      display: none;
+    }
+
+    .button_1 {
+      display: block;
+    }
   }
 
   .menu_button {
@@ -639,7 +706,7 @@ p.last {
 
   .section02 {
     gap: 20px;
-    width: 90%;
+    width: 80%;
     margin: 0% 50px;
     padding: 130px 24px;
   }
@@ -649,19 +716,18 @@ p.last {
     flex-direction: column;
     order: -1;
     margin-top: 224px;
-    margin-left: 50%;
+    margin-left: 40%;
   }
 
   li {
     width: fit-content;
-    margin-left: %;
   }
 
   div.start {
     display: flex;
     flex-direction: column;
     padding: 192px 0%;
-    margin-left: 53px;
+    margin-left: 10%;
   }
 
   h1,
@@ -728,7 +794,8 @@ p.last {
 
   .grid3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
     max-width: fit-content;
     gap: 24px;
   }
@@ -759,6 +826,7 @@ p.last {
     background-size: 40%;
     background-position-y: 15%;
     width: auto;
+    background-color: rgba(38, 38, 38, 1);
   }
 
   img.breakln01 {
@@ -793,6 +861,7 @@ p.last {
   section.contact {
     display: grid;
     grid-template-columns: 35% 60% 5%;
+    width: 80%;
     margin-left: 105px;
     padding: 130px 0%;
     gap: 24px;
@@ -802,6 +871,7 @@ p.last {
     font-size: 40px;
     line-height: 52px;
     text-align: left;
+    color: rgba(38, 38, 38, 1);
   }
 
   p.write-up {
@@ -835,5 +905,43 @@ p.last {
 
   p.last {
     display: none;
+  }
+
+  button:hover {
+    background-color: rgba(255, 245, 225, 1);
+    color: rgba(245, 88, 0, 1);
+    border: 1px solid rgba(245, 88, 0, 1);
+    padding: 0%;
+  }
+
+  button:active {
+    background-color: rgba(224, 83, 4, 1);
+    box-shadow: none;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+/* form:invalid [type="submit"] {
+    background-color: rgba(244, 241, 240, 1);
+    color: rgba(91, 89, 87, 1);
+    border: none;
+  } */
+
+@media (min-width: 595px) {
+  .grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: fit-content;
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1124px) {
+  .grid3 {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto auto;
+    max-width: fit-content;
+    gap: 24px;
   }
 }
