@@ -216,6 +216,11 @@ button {
 
 button.mainbttn {
   width: fit-content;
+  padding: 12px;
+}
+
+.mainbttn:hover {
+  padding: 12px;
 }
 
 a:hover,
