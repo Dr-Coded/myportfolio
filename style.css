@@ -214,6 +214,10 @@ button {
   border: none;
 }
 
+button.mainbttn {
+  width: fit-content;
+}
+
 a:hover,
 button:hover {
   cursor: pointer;
@@ -360,6 +364,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding: 120px 0px;
 }
 
 .sect {
@@ -432,7 +437,7 @@ p.skill {
 
 .contact {
   gap: 58px;
-  padding: 40px 24px;
+  padding: 80px 24px;
   padding-bottom: 0%;
 }
 
